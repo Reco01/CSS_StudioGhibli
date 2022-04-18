@@ -1,0 +1,79 @@
+* {
+	#border: dotted red 3px;
+}
+
+/* Police locale dans ../font */
+
+@font-face {
+	font-family: "DotGothic16";
+	src: url("../font/DotGothic16-Regular.ttf") format("truetype");
+}
+
+html {
+	font-family: 'DotGothic16';
+	background-image: url(../img/bg_bio.jpg);
+	background-size: cover;
+}
+
+body {
+	background-color: white;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	height: 1100px;
+	overflow: auto;
+	border-left: solid #D2BE4B 8px;
+	border-right: solid #D2BE4B 8px;
+}
+
+#bio, #bio_2 {
+	text-align: justify;
+	height: 400px;
+	width: 90%;
+	margin: 60px;
+	float: left;
+	font-size: 1.2em; /* 1.3em 1920x1080 27" // 1.2em 2560x1600 13"*/
+	border-bottom: solid black 3px;
+}
+
+#bio_2 {
+	float: right;
+}
+
+#miyazaki, #takahata {
+	vertical-align: middle;
+	border: black solid 3px;
+	width: auto;
+	height: 400px;
+	margin: 40px;
+	float: left;
+}
+
+#takahata {
+	float: right;
+}
+
+
+#back {
+	position: fixed;
+	bottom: 0;
+	margin-left: 15px;
+}
+
+.back_btn:link {
+	text-decoration: none;
+}
+
+.back_btn:active {
+	text-decoration: none;
+}
+
+.back_btn:visited {
+	color: black;
+}
+
+.back_btn:hover {
+	background-color: black;
+	color: white;
+}
